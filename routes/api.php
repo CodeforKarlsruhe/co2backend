@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/co2data', [CO2DataController::class, 'show']);
 Route::post('/co2data', [CO2DataController::class, 'store']);

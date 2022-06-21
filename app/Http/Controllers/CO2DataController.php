@@ -22,8 +22,8 @@ class CO2DataController extends Controller
             'code'                                  => 'sometimes|integer',
             'co2total'                              => 'required|numeric',
             'co2params.*'                           => 'required|array',
-            'co2params.*.value'                     => 'required|numeric',
-            'co2params.*.params'                    => 'required|array',
+            'co2params.*.value'                     => 'sometimes|required|numeric', // only sometimes, because it is not present in sector6
+            'co2params.*.params'                    => 'sometimes|required|array',   // only sometimes, because it is not present in sector6
             'co2params.sector1.params.size'         => 'required|integer',
             'co2params.sector1.params.renew'        => 'required|boolean',
             'co2params.sector1.params.eco'          => 'required|boolean',
@@ -38,16 +38,12 @@ class CO2DataController extends Controller
             'location.district'                     => 'required|integer',
             'location.mult'                         => 'required|integer'
         ]);
-        return "Validated true!";
 
         // save to database
         $model = new CO2Data;
         $model->co2total = $data['co2total'];
-        $model->co2params = $data['co2params'];
-        $model->location = $data['location'];
+        $model->co2params = json_encode($data['co2params']);
+        $model->location = json_encode($data['location']);
         $model->save();
-        
-        // TEST → return all data
-        return CO2Data::all();
     }
 }
