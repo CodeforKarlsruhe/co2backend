@@ -1,0 +1,72 @@
+{
+  "resources/js/main.ts": {
+    "file": "assets/main.a9136d2d.js",
+    "src": "resources/js/main.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/@ionic/core/components/ios.transition.js",
+      "node_modules/@ionic/core/components/md.transition.js",
+      "node_modules/@ionic/core/components/swiper.bundle.js",
+      "node_modules/@ionic/core/components/swipe-back.js",
+      "node_modules/@ionic/core/components/tap-click.js",
+      "node_modules/@ionic/core/components/status-tap.js",
+      "node_modules/@ionic/core/components/input-shims.js"
+    ],
+    "css": [
+      "assets/main.ff4688c2.css"
+    ]
+  },
+  "node_modules/@ionic/core/components/swiper.bundle.js": {
+    "file": "assets/swiper.bundle.a76d5250.js",
+    "src": "node_modules/@ionic/core/components/swiper.bundle.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@ionic/core/components/swipe-back.js": {
+    "file": "assets/swipe-back.3d05b946.js",
+    "src": "node_modules/@ionic/core/components/swipe-back.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "node_modules/@ionic/core/components/tap-click.js": {
+    "file": "assets/tap-click.510859d4.js",
+    "src": "node_modules/@ionic/core/components/tap-click.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "node_modules/@ionic/core/components/status-tap.js": {
+    "file": "assets/status-tap.f09ec027.js",
+    "src": "node_modules/@ionic/core/components/status-tap.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "node_modules/@ionic/core/components/input-shims.js": {
+    "file": "assets/input-shims.d8f5a9a6.js",
+    "src": "node_modules/@ionic/core/components/input-shims.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "node_modules/@ionic/core/components/ios.transition.js": {
+    "file": "assets/ios.transition.d5803dc3.js",
+    "src": "node_modules/@ionic/core/components/ios.transition.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "node_modules/@ionic/core/components/md.transition.js": {
+    "file": "assets/md.transition.2642e54a.js",
+    "src": "node_modules/@ionic/core/components/md.transition.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  }
+}
