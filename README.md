@@ -1,5 +1,5 @@
 ## CO2 Backend
-Laravel backend for [co2app](https://github.com/CodeforKarlsruhe/co2app)
+Laravel backend for [co2app](https://github.com/CodeforKarlsruhe/co2app).
 
 ### Files of interest
 |File|Description|
@@ -10,6 +10,6 @@ Laravel backend for [co2app](https://github.com/CodeforKarlsruhe/co2app)
 |[routes](./routes/api.php)| API routes definition. *All routes will be available under `/api`.* |
 
 ### API
-Send a JSON `POST` request with the co2 app data to `http://localhost/api/co2data`.
+Send a JSON `POST` request with the co2 app data to `http://localhost/api/co2data`. Don't forget to set `accept: application/json` in the header to get a proper validation failed response instead of a redirect.
 
 Look at the [data validator](./app/Http/Controllers/CO2DataController.php) if you encounter problems.
