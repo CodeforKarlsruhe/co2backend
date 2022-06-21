@@ -1,6 +1,9 @@
 ## CO2 Backend
 Laravel backend for [co2app](https://github.com/CodeforKarlsruhe/co2app).
 
+### Setup
+To run Laravel in the docker container use `./vendor/bin/sail up`. Then you can use `sail` for all Laravel commands e.g. `./vendor/bin/sail php artisan migrate`.
+
 ### Files of interest
 |File|Description|
 |:---|:---|
